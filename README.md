@@ -16,14 +16,18 @@ $ npm run lint
 > eslint --ext .js,.vue --ignore-path .gitignore .
 
 
-E:\lib_project\test-nuxt-eslint\components\test-eslint.vue
-   5:3   error    The template root requires exactly one element  vue/valid-template-root
-  10:11  warning  Prop "type" should define at least its type     vue/require-prop-types
-
-E:\lib_project\test-nuxt-eslint\pages\index.vue
-  8:7  error  Expected '<component>' elements to have 'v-bind:is' attribute  vue/require-component-is
-
-✖ 3 problems (2 errors, 1 warning)
+TypeError: Cannot read property 'range' of null
+Occurred while linting e:\lib_project\test-nuxt-eslint\pages\index.vue:35
+    at SourceCode.getTokenBefore (e:\lib_project\test-nuxt-eslint\node_modules\eslint\lib\source-code\token-store\index.js:298:18)
+    at checkSpacingBefore (e:\lib_project\test-nuxt-eslint\node_modules\eslint\lib\rules\template-curly-spacing.js:60:42)
+    at TemplateElement (e:\lib_project\test-nuxt-eslint\node_modules\eslint\lib\rules\template-curly-spacing.js:119:17)
+    at listeners.(anonymous function).forEach.listener (e:\lib_project\test-nuxt-eslint\node_modules\eslint\lib\linter\safe-emitter.js:45:58)
+    at Array.forEach (<anonymous>)
+    at Object.emit (e:\lib_project\test-nuxt-eslint\node_modules\eslint\lib\linter\safe-emitter.js:45:38)
+    at NodeEventGenerator.applySelector (e:\lib_project\test-nuxt-eslint\node_modules\eslint\lib\linter\node-event-generator.js:254:26)
+    at NodeEventGenerator.applySelectors (e:\lib_project\test-nuxt-eslint\node_modules\eslint\lib\linter\node-event-generator.js:283:22)
+    at NodeEventGenerator.enterNode (e:\lib_project\test-nuxt-eslint\node_modules\eslint\lib\linter\node-event-generator.js:297:14)
+    at CodePathAnalyzer.enterNode (e:\lib_project\test-nuxt-eslint\node_modules\eslint\lib\linter\code-path-analysis\code-path-analyzer.js:634:23)s
 
 ```
 

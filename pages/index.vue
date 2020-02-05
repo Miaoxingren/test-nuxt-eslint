@@ -32,6 +32,8 @@
 <script>
 import Logo from '~/components/Logo.vue'
 
+const loadComp = name => import(`components/${name}/${name}.vue`)
+
 export default {
   components: {
     Logo
@@ -40,6 +42,9 @@ export default {
     return {
       myComp: ''
     }
+  },
+  created () {
+    if (this.myComp) { loadComp(this.myComp) }
   }
 }
 </script>

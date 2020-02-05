@@ -35,19 +35,3 @@ Occurred while linting e:\lib_project\test-nuxt-eslint\pages\index.vue:35
 
 No errors.
 
-## Temporary solution
-
-1. npm i eslint-plugin-nuxt@0.4.3 -D
-2. npm run lint
-
-### Current outcome:
-
-No errors.
-
-```
-$ npm run lint
-
-> test-nuxt-eslint@1.0.0 lint E:\lib_project\test-nuxt-eslint
-> eslint --ext .js,.vue --ignore-path .gitignore .
-
-```
